@@ -45,10 +45,10 @@ public class Square extends Object
         vely=y;
     }
     
-    public void move(int x, int y){
-    	rect.translate(x, y);
-    	setX(getX()+x);
-    	setY(getY()+y);
+    public void move(double x, double y){
+    	rect.translate((int)x, (int)y);
+    	setX(getX()+(int)x);
+    	setY(getY()+(int)y);
     }
     
     public boolean intersectsBlock(Block b){
